@@ -25,8 +25,8 @@ pipeline {
 			steps{
 				withSonarQubeEnv ('SonarQube'){
 			sh "mvn sonar:sonar \
-					-Dsonar.projectKey=maven-jenkins-pipeline \
-				-Dsonar.host.url=http://52.87.158.127:9000"
+					-Dsonar.projectKey=test-jenkins \
+				-Dsonar.host.url=http://34.201.128.5:9000"
 				}
 			}
 		}
