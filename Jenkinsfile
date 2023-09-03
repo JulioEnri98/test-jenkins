@@ -44,7 +44,7 @@ pipeline {
 			steps{
 				withSonarQubeEnv ('SonarQubeToken'){
 			sh "mvn sonar:sonar \
-					-Dsonar.projectKey=spring-petclinic-maven-java11 \
+					-Dsonar.projectKey=test-jenkins \
 				-Dsonar.host.url=http://localhost:9000"
 				}
 			}
