@@ -45,7 +45,7 @@ pipeline {
 				withSonarQubeEnv ('SonarQubeToken'){
 			sh "mvn sonar:sonar \
 					-Dsonar.projectKey=spring-petclinic-maven-java11 \
-				-Dsonar.host.url=http://44.211.159.89:9000"
+				-Dsonar.host.url=http://localhost:9000"
 				}
 			}
 		}
