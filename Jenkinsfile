@@ -42,7 +42,7 @@ pipeline {
         }
         stage('Sonarqube Analysis - SAST'){
 			steps{
-				withSonarQubeEnv ('SonarQubeToken'){
+				withSonarQubeEnv ('SonarQube'){
 			sh "mvn sonar:sonar \
 					-Dsonar.projectKey=test-jenkins \
 				-Dsonar.host.url=http://localhost:9000"
